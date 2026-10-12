@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
@@ -7,7 +7,7 @@
     list-style: none;
 }
 /* Navigation Links */
-header{
+header {
     position: fixed;
     top: 1rem;
     left: 50%;
@@ -24,7 +24,7 @@ header{
     z-index: 100;
 }
 
-.logo{
+.logo {
     font-size: 1.5rem;
     color: white;
     text-wrap: nowrap;
@@ -33,26 +33,26 @@ header{
     text-decoration: none;
 }
 
-.logo:hover{
+.logo:hover {
     transform: scale(1.1);
     text-shadow: 0 0 10px rgb(2, 131, 166);
 }
 
-.nav-links{
+.nav-links {
     display: flex;
     gap: 2rem;
 }
 
-li a{
+li a {
     color: white;
     position: relative;
     font-weight: 350;
     text-decoration: none;
 }
 
-li a::before{
+li a::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 0;
     left: 0;
     height: 5px;
@@ -62,12 +62,12 @@ li a::before{
     background: linear-gradient(to right, rgb(6, 207, 238), rgb(2, 131, 166));
 }
 
-li a:hover::before{
+li a:hover::before {
     width: 100%;
     cursor: pointer;
 }
 
-.visit-btn{
+.visit-btn {
     padding: 0.8rem 1.5rem;
     border-radius: 10rem;
     border: none;
@@ -81,70 +81,70 @@ li a:hover::before{
     box-shadow: 0 0 5px black;
 }
 
-.visit-btn:hover{
-    background: linear-gradient(to right, rgb(2, 131, 166),  rgb(6, 207, 238));
+.visit-btn:hover {
+    background: linear-gradient(to right, rgb(2, 131, 166), rgb(6, 207, 238));
     transform: scale(1.1);
 }
 
-#menu-icon{
+#menu-icon {
     font-size: 2rem;
     display: none;
 }
 /* About Section */
-section{
+section {
     min-height: 100vh;
     padding: 8rem 12%;
     width: 100%;
     position: relative;
 }
 
-.about{
+.about {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.about .about-container{
+.about .about-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8rem;
 }
 
-.about img{
+.about img {
     width: 30vw;
-    border-radius: 40px;
+    border-radius: 50%;
 }
 
-.info-box{
+.info-box {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-.info-box h3{
+.info-box h3 {
     font-size: 1.8rem;
     font-weight: 500;
 }
 
-.info-box h1{
+.info-box h1 {
     font-size: 4rem;
     font-weight: 600;
 }
 
-.info-box span{
-    background: linear-gradient(to right, rgb(2, 131, 166),  rgb(6, 207, 238));
+.info-box span {
+    background: linear-gradient(to right, rgb(2, 131, 166), rgb(6, 207, 238));
     background-clip: text;
     color: transparent;
     font-size: 2rem;
 }
 
-.btn-group{
+.btn-group {
     display: flex;
     gap: 2rem;
 }
 
-.btn{
+.btn {
     border-radius: 20px;
     padding: 0.5rem 1.5rem;
     border: 2px solid black;
@@ -154,22 +154,90 @@ section{
     transition: 0.2s ease;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: black;
     color: white;
 }
 
-.socials{
+.socials {
     display: flex;
     gap: 2rem;
 }
 
-.socials i{
+.socials i {
     font-size: 2.5rem;
     cursor: pointer;
     transition: 0.2s ease;
 }
 
-.socials i:hover{
+.socials i:hover {
     transform: scale(1.1);
+}
+/* Experience Section */
+.section-title {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.experience-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.experience img {
+    width: 24vw;
+    border-radius: 3rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.grid-card {
+    border: 2px solid black;
+    border-radius: 3rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: left;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.grid-card:hover {
+    transform: scale(1.05);
+    background-color: black;
+    color: white;
+}
+
+.grid-card i {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.grid-card span {
+    font-size: 1.5rem;
+    font-weight: 500;
+    background: linear-gradient(to right, rgb(6, 207, 238), rgb(2, 131, 166));
+    background-clip: text;
+    color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(219, 219, 219);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, rgb(6, 207, 238), rgb(2, 131, 166));
 }
